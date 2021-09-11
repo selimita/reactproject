@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
+@import url(https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css);
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+#root .navbar-brand {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+#header {
+  padding: 70px 0;
+}
+
+#header h1, #header h2 {
+  text-transform: capitalize;
+}
+
+#header img {
+  width: 100%;
+  height: auto;
+}
+
+#header .animated {
+  animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    -webkit-transform: translateY(10px);
+            transform: translateY(10px);
+  }
+  100% {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+.btn-get-started {
+  text-decoration: none;
+  font-size: 24px;
+  text-transform: capitalize;
+  background: #666;
+  padding: 10px 25px;
+  border-radius: 50px;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.btn-get-started:hover {
+  background: tomato;
+  color: #fff;
+}
+
+#service {
+  padding: 70px 0 20px 0;
+}
+
+#service img {
+  width: 100%;
+  height: auto;
+}
+
+#service h1 {
+  text-align: center;
+  border-bottom: 2px solid tomato;
+  width: 260px;
+  margin: 0 auto;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+#service .single-service {
+  margin-bottom: 30px;
+}
+
+#service .single-service h4 {
+  font-size: 28px;
+  margin-top: 7px;
+  text-transform: capitalize;
+}
+
+.btn-read-more {
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: capitalize;
+  background: #666;
+  padding: 8px 20px;
+  border-radius: 5px;
+  color: #fff;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.btn-read-more:hover {
+  background: tomato;
+  color: #fff;
+}
+
+#contact {
+  padding: 70px 0;
+  text-transform: capitalize;
+  background: lightgray;
+}
+
+#contact h1 {
+  margin-bottom: 30px;
+}
+
+#contact .btn-submit {
+  padding: 10px 20px;
+  text-transform: capitalize;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#contact .btn-submit:hover {
+  background: tomato;
+  color: #fff;
+}
+
+#contact input[type=text],
+#contact input[type=email],
+#contact input[type=number],
+#contact textarea {
+  text-transform: capitalize;
+  font-size: small;
+  color: #999;
+}
+
+#project {
+  padding: 70px 0 20px 0;
+  text-transform: capitalize;
+}
+
+#project img {
+  width: 100%;
+  height: auto;
+}
+
+#project h1 {
+  text-align: center;
+  width: 260px;
+  margin: 0 auto;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+#project .single-service {
+  margin-bottom: 30px;
+}
+
+#project .single-service h4 {
+  font-size: 28px;
+  margin-top: 7px;
+  text-transform: capitalize;
+}
+
+#project .btn-group {
+  padding-bottom: 20px;
+  margin: 0 auto;
+}
+
+#project .btn-group button {
+  padding: 8px 20px;
+  margin-right: 10px;
+  text-transform: capitalize;
+  color: tomato;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: none;
+}
+
+#project .btn-group button:hover {
+  background: tomato;
+  color: #fff;
+}
+
+#reducer {
+  padding: 70px 0;
+}
+
+#reducer .bg-reducer {
+  background: #333;
+  padding: 30px 0;
+}
+
+#reducer p {
+  font-size: 60px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+#reducer .btn-group {
+  margin: 0 auto;
+}
+
+#reducer .bg-light {
+  padding: 12px 0 30px 0;
+}
+
+#reducer button {
+  padding: 10px 31px;
+  margin-right: 20px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#reducer button:hover {
+  background: tomato;
+  color: #fff;
+}
+
+#todo {
+  padding: 70px 0;
+  background: #333;
+}
+
+#todo .todo-top img {
+  width: 120px;
+}
+
+#todo .todo-top p {
+  font-size: 24px;
+  margin-top: 20px;
+  color: tomato;
+}
+
+#todo .todo-mid {
+  padding: 20px 0;
+}
+
+#todo .todo-items input {
+  float: left;
+  padding: 10px 20px;
+}
+
+#todo .plus-btn {
+  float: right;
+  margin-top: -37px;
+}
+
+#todo .plus-btn i {
+  margin-right: 20px;
+}
+
+#todo .plus-btn i,
+#todo .todo-btn i {
+  cursor: pointer;
+}
+
+#todo .all-items {
+  margin-top: 38px;
+  overflow: hidden;
+}
+
+#todo .all-items .single-item {
+  padding: 5px 20px;
+  margin-top: 10px;
+  background: tomato;
+  border-radius: 5px;
+}
+
+#todo .all-items .single-item h3 {
+  font-size: 20px;
+  margin-top: 5px;
+}
+
+#todo .all-items .todo-btn {
+  float: right;
+  margin-top: -32px;
+}
+
+#todo .all-items .todo-btn i {
+  margin-right: 5px;
+}
+
+#todo .all-items .todo-btn:last-child {
+  margin-right: 0;
+}
+
+#todo .remove-btn button {
+  background: #fff;
+  padding: 5px 15px;
+  font-size: 22px;
+  color: tomato;
+  border: 2px solid tomato;
+  margin-top: 30px;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#todo .remove-btn button:hover {
+  background: tomato;
+  color: #fff;
+}
+
+.progress-area {
+  padding: 70px 0;
+}
+
+.progress-area h1 {
+  margin-bottom: 50px;
+  text-transform: capitalize;
+}
+
+.progress-area p {
+  margin-bottom: -10px;
+  margin-left: 5px;
+}
+
+.progress-area .progress {
+  background-color: #d8d8d8;
+  border-radius: 20px;
+  position: relative;
+  margin: 15px 0;
+  height: 40px;
+  width: 100%;
+}
+
+.progress-area .progress-done {
+  background: -webkit-gradient(linear, right top, left top, from(#F2709C), to(#FF9472));
+  background: linear-gradient(to left, #F2709C, #FF9472);
+  -webkit-box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+          box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+  border-radius: 20px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  -webkit-transition: 1s ease 0.3s;
+  transition: 1s ease 0.3s;
+}
+
+#weather-card {
+  padding: 70px 0;
+  background: lightgray;
+}
+
+#weather-card .search input {
+  padding: 5px 10px;
+  border: 1px solid tomato;
+  background: tomqto;
+}
+
+#weather-card .search .searchButton {
+  padding: 5px 10px;
+  background: tomato;
+  color: #fff;
+}
+
+#weather-card .search .searchTerm:focus {
+  color: tomato;
+}
+
+#weather-card .widget {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+#weather-card .weatherIcon {
+  font-size: 100px;
+  color: tomato;
+  vertical-align: middle;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  padding-bottom: 30px;
+}
+
+#weather-card .weather-content {
+  font-size: 30px;
+  background: tomato;
+  padding: 20px 0;
+}
+
+#weather-card .weather-content .temperature {
+  font-size: 55px;
+  border-right: 1px solid aliceblue;
+}
+
+#weather-card .weather-content .description {
+  border-right: 1px solid aliceblue;
+}
+
+#weather-card .weather-content .place {
+  font-size: 18px;
+}
+
+#weather-card .weather-content .date {
+  font-size: 24px;
+  padding: 0 40px;
+}
+
+#weather-card .weather-footer {
+  margin-top: 30px;
+}
+
+#weather-card .weather-footer i {
+  color: tomato;
+  font-size: 24px;
+  /*! padding: 5px; */
+  margin-bottom: 10px;
+}
+
+#weather-card .weather-footer p {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+#footer footer {
+  background: #333;
+  color: #fff;
+}
+
+#footer p {
+  padding: 22px 0;
+  margin-top: 20px;
+  font-size: 24px;
+  text-transform: capitalize;
+}
+
+#footer strong {
+  text-transform: lowercase;
+  cursor: pointer;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#footer strong:hover {
+  color: tomato;
+}
+
+@media screen and (max-width: 720px) {
+  #project .btn-group button {
+    padding: 5px 8px;
+    margin-right: 7px;
+    font-size: 14px;
+  }
+  #weather-card .search .searchButton {
+    margin-top: 30px;
+  }
+  #weather-card .weather-content .temperature {
+    border-right: none;
+  }
+  #weather-card .weather-content .description {
+    border-right: none;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #weather-card .weather-content .temperature {
+    border-right: none;
+    font-size: 40px;
+  }
+  #weather-card .weather-content .description {
+    border-right: none;
+  }
+  #weather-card .weather-content .date {
+    font-size: 18px;
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  #weather-card .weather-content .temperature {
+    font-size: 40px;
+  }
+  #weather-card .weather-content .date {
+    font-size: 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
